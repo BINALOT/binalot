@@ -6,12 +6,22 @@
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-body{
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-image: url("green.jpg");
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url(green.jpg);
     background-repeat: repeat;
-    background-size: cover;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
 }
 .navbar{
     width: 100%;
@@ -24,6 +34,7 @@ body{
     width: 150px;
     cursor: pointer;
     margin-left: 10px;
+
 }
 nav{
     flex: 1;
